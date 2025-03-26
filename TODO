@@ -1,4 +1,2 @@
-- Minify
-- Create immediately invoked function version
 - Update readme to mention the CSS
-- Bundle css into the minify version?
+- Update README to mention lack of error protection, and ensuring no uuid collision
