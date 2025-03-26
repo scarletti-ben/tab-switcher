@@ -1,7 +1,7 @@
 # tab-switcher v1.0.3
 
 ## Overview
-This project is my first attempt at a `JavaScript` module to be served via `CDN`, it is not intended to be incredibly "feature-rich", but the `TabSwitcher` class has been useful when making test sites during web development. The main aim was to create a "tab" system, where only a single tab is open at a time and you can switch between the different tabs, thereby changing the content shown on the site. It is usuable "as is" but some projects would likely benefit from altering the source code for their specific use case
+This project is my first attempt at a `JavaScript` module to be served via `CDN`, it is not intended to be incredibly "feature-rich", but the `TabSwitcher` class has been useful when making test sites during web development. The main aim was to create a "tab" system, where only a single tab is open at a time and you can switch between the different tabs, thereby changing the content shown on the site. It is usable "as is" but some projects would likely benefit from altering the source code for their specific use case
 
 ## Demo Site
 A demo site can be found on `GitHub Pages` via the link [here](https://scarletti-ben.github.io/tab-switcher). The folder structure of the files used by the demo site can be found below
@@ -136,7 +136,7 @@ import { TabSwitcher } from "./tab-switcher.js";
 let containerID = 'page'
 let switcherID = TabSwitcher.create(containerID, 'tab-switcher');
 
-// Crete a TabSwitcher instance that points to the newly created element
+// Create a TabSwitcher instance that points to the newly created element
 let switcher = new TabSwitcher(switcherID);
 
 // Get a 'universally unique identifier' for the tab
