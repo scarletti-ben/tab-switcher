@@ -156,5 +156,8 @@ switcher.add(tabUUID, tabUUID, tabElement);
 
 ```
 
+### A Note on UUIDs
+The purpose of `uuids`, in conjunction with regular `HTML` element `ids`, is to "link" a tab's `notch` (in the top ribbon) to its `content` (in the main window of the `TabSwitcher` instance). The simplest way to ensure `uuids` don't collide is to use `let uuid = crypto.randomUUID()`
+
 ## Miscellaneous
-Little to no effort has yet been put into making the project "error-safe", and it is likely prone to user error. A common issue that could arise is `uuid` collision for tabs, which is best avoided by using `crypto.randomUUID()` to generate `uuids` for new tabs
+Little to no effort has yet been put into making the project "error-safe", and it is likely prone to user error
