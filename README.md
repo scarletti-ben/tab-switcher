@@ -154,6 +154,9 @@ tabElement.appendChild(textarea);
 // Add the test element as a new tab
 switcher.add(tabUUID, tabUUID, tabElement);
 
+// Open the new tab
+switcher.show(tabUUID);
+
 ```
 
 ### A Note on UUIDs
