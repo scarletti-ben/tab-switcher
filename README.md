@@ -84,7 +84,7 @@ import { TabSwitcher } from 'https://cdn.jsdelivr.net/gh/scarletti-ben/tab-switc
 ```
 
 ### Using the "Combined" File via CDN
-The file `tab-switcher-combined.js` works a bit differently, it combines `tab-switcher.js` and `tab-switcher.css` into a single file. But, more importantly, it does not use the `import` / `export` syntax, simply importing it in the `<head>` of `index.html` is enough to gain access to the `TabSwitcher` class as shown below
+`tab-switcher-combined.js`, works a bit differently, it combines `tab-switcher.js` and `tab-switcher.css` into a single file. But, more importantly, it does not use the `import` / `export` syntax, simply importing it in the `<head>` of `index.html` is enough to gain access to the `TabSwitcher` class as shown below
 ```html
 <head>
   <link rel="stylesheet" href="styles.css">
@@ -119,6 +119,8 @@ It is worth noting that this method does not pollute the global namespace, and o
 
 })();
 ```
+
+`tab-switcher-combined.js`  version `v1.0.2` can be found on `jsDelivr` via this [link](`tab-switcher-combined.js`)
 
 ### Some Notes on use via CDN
 The `CDN` versions are mostly useful as "plug and play" as you will not get type-hints in your `IDE`, and if your project actually plans to make consistent use of `tab-switcher`, or alter its functionality substantially, it is probably best to use as a [local version](#using-the-files-locally)
@@ -155,4 +157,4 @@ switcher.add(tabUUID, tabUUID, tabElement);
 ```
 
 ## Miscellaneous
-Little to no effort has yet been put into making the project "error-safe", and it may be prone to user error. A common issue that could arise is `uuid` collision for tabs, which is best avoided by using `crypto.randomUUID()` to generate `uuids`
+Little to no effort has yet been put into making the project "error-safe", and it is likely prone to user error. A common issue that could arise is `uuid` collision for tabs, which is best avoided by using `crypto.randomUUID()` to generate `uuids` for new tabs
