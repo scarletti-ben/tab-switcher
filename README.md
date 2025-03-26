@@ -1,4 +1,4 @@
-# tab-switcher v1.0.2
+# tab-switcher v1.0.3
 
 ## Overview
 This project is my first attempt at a `JavaScript` module to be served via `CDN`, it is not intended to be incredibly "feature-rich", but the `TabSwitcher` class has been useful when making test sites during web development. The main aim was to create a "tab" system, where only a single tab is open at a time and you can switch between the different tabs, thereby changing the content shown on the site. It is usuable "as is" but some projects would likely benefit from altering the source code for their specific use case
@@ -59,15 +59,15 @@ As the files are hosted in a `GitHub` repository, you can expect those files to 
   - https://scarletti-ben.github.io/tab-switcher/tab-switcher.js
   - https://scarletti-ben.github.io/tab-switcher/tab-switcher.css
 
-- If you are accessing the files via a `jsDelivr` link you can specify an exact release tag, here we use `v1.0.2`, and ensure that the files you are accessing do not change, ensuring consistent functionality
-  - https://cdn.jsdelivr.net/gh/scarletti-ben/tab-switcher@v1.0.2/tab-switcher.js
-  - https://cdn.jsdelivr.net/gh/scarletti-ben/tab-switcher@v1.0.2/tab-switcher.css
+- If you are accessing the files via a `jsDelivr` link you can specify an exact release tag, here we use `v1.0.3`, and ensure that the files you are accessing do not change, ensuring consistent functionality
+  - https://cdn.jsdelivr.net/gh/scarletti-ben/tab-switcher@v1.0.3/tab-switcher.js
+  - https://cdn.jsdelivr.net/gh/scarletti-ben/tab-switcher@v1.0.3/tab-switcher.css
 
 You can import `tab-switcher.css` via the `<head>` of your `index.html` as shown in the snippet below 
 ```html
 <head>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/scarletti-ben/tab-switcher@v1.0.2/tab-switcher.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/scarletti-ben/tab-switcher@v1.0.3/tab-switcher.css">
 </head>
 ```
 
@@ -80,7 +80,7 @@ You would set up your `main.js` as a module to allow use of the `import` keyword
 
 You can then access the `TabSwitcher` class using the syntax in the snippet below
 ```javascript
-import { TabSwitcher } from 'https://cdn.jsdelivr.net/gh/scarletti-ben/tab-switcher@v1.0.2/tab-switcher.js';
+import { TabSwitcher } from 'https://cdn.jsdelivr.net/gh/scarletti-ben/tab-switcher@v1.0.3/tab-switcher.js';
 ```
 
 ### Using the "Combined" File via CDN
@@ -88,7 +88,7 @@ import { TabSwitcher } from 'https://cdn.jsdelivr.net/gh/scarletti-ben/tab-switc
 ```html
 <head>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://cdn.jsdelivr.net/gh/scarletti-ben/tab-switcher@v1.0.2/tab-switcher-combined.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/scarletti-ben/tab-switcher@v1.0.3/tab-switcher-combined.js"></script>
 </head>
 <body>
   <script defer>
@@ -120,7 +120,7 @@ It is worth noting that this method does not pollute the global namespace, and o
 })();
 ```
 
-`tab-switcher-combined.js`  version `v1.0.2` can be found on `jsDelivr` via this [link](`tab-switcher-combined.js`)
+`tab-switcher-combined.js`  version `v1.0.3` can be found on `jsDelivr` via this [link](`tab-switcher-combined.js`)
 
 ### Some Notes on use via CDN
 The `CDN` versions are mostly useful as "plug and play" as you will not get type-hints in your `IDE`, and if your project actually plans to make consistent use of `tab-switcher`, or alter its functionality substantially, it is probably best to use as a [local version](#using-the-files-locally)
