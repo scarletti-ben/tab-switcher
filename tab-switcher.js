@@ -82,12 +82,12 @@ export class TabSwitcher {
     // < ========================================================
 
     /**
-     * Inject tab-switcher HTML structure into a given container element by ID
-     * @param {string} containerID - The ID of the container element to inject the HTML
+     * Generate tab-switcher HTML structure inside a given container element
+     * @param {string} containerID - The ID of the container element
      * @param {string} switcherID - The ID of the new tab-switcher element
      * @returns {string} - The id of the new tab-switcher element
      */
-    static inject(containerID, switcherID) {
+    static create(containerID, switcherID) {
         let container = document.getElementById(containerID);
         const tabSwitcherHTML = `
             <div id="${switcherID}" class="tab-switcher">
@@ -104,7 +104,7 @@ export class TabSwitcher {
                 </div>
             </div>
         `;
-        container.innerHTML = tabSwitcherHTML;
+        container.insertAdjacentHTML('beforeend', tabSwitcherHTML);
         return switcherID;
     }
 

@@ -10,7 +10,7 @@ import { TabSwitcher } from "./tab-switcher.js";
 
 function main() {
 
-    let id = TabSwitcher.inject('page', 'tab-switcher');
+    let id = TabSwitcher.create('page', 'tab-switcher');
     let switcher = new TabSwitcher(id);
 
     // > Create a tab with a note (uses pages.css)
